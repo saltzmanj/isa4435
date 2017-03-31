@@ -1,4 +1,5 @@
 use std::io;
+use std::env::consts;
 use std::io::prelude::*;
 use std::fs::File;
 use std::io::BufReader;
@@ -66,7 +67,9 @@ fn prompt_for_string() -> String {
 	let mut handle = stdin.lock();
 	let _ = handle.read_line(&mut strbuf);
 	strbuf.pop();
-	// strbuf.pop();
+	if consts::FAMILY == "windows" {
+		strbuf.pop();
+	}
 	strbuf
 }
 
