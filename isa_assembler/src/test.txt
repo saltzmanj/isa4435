@@ -1,0 +1,13 @@
+; Test program
+
+LD	R1, R2, 0x05
+ST	R2, R1, 0x03
+
+LIL R1, 0x11
+LIH R1, 0xFF
+
+ADD R1, R2
+
+ST	R1, R11, 0x01 
+
+; Comment

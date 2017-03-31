@@ -1,6 +1,0 @@
-[package]
-name = "win_rust"
-version = "0.1.0"
-authors = ["Jacob Saltzman <jss7kj@virginia.edu>"]
-
-[dependencies]
