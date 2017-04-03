@@ -40,7 +40,7 @@ fn main(){
 		}
 	}
 
-	let path = Path::new("program.txt");
+	let path = Path::new("memoryinit.txt");
 	let display = path.display();
 	let mut outfile = match File::create(&path) {
 		Err(why) => panic!("Couldn't create {}.", display),
